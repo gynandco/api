@@ -1,0 +1,6 @@
+type Query {
+
+    "Get all jobs"
+    getAllJobs(skip: Int, take: Int): [Job!]!
+
+}
