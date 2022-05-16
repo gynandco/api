@@ -1,2 +1,2 @@
-# be-gynandco
-Back-end for Gyn&amp;co website.
+# API
+Home-made API for Gyn&co.
