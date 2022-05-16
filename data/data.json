@@ -1,0 +1,72 @@
+{
+    "jobs": [
+        {
+            "label": "Gynécologue"
+        }, {
+            "label": "Gynécologue-obstétricien⸱ne"
+        }, {
+            "label": "Médecin généraliste"
+        }, {
+            "label": "Sage-femme"
+        }
+    ],
+    "categories": [
+        {
+            "label": "Secteur 1"
+        }, {
+            "label": "Femme soignante"
+        }, {
+            "label": "Cabinet accessible"
+        }
+    ],
+    "caregivers": [
+        {
+            "firstname": "Isabelle",
+            "lastname": "Le Guen",
+            "status": "published",
+            "gender": "femme",
+            "sector": "2",
+            "online_appointment": false
+        }, {
+            "firstname": "Ying Yang",
+            "lastname": "Wang",
+            "status": "published",
+            "gender": "homme",
+            "sector": "1",
+            "online_appointment": false
+        }, {
+            "firstname": "Araci",
+            "lastname": "Vinhas",
+            "status": "published",
+            "gender": "femme",
+            "sector": "1",
+            "online_appointment": false
+        }
+    ],
+    "places": [
+        {
+            "street": "36 Avenue Hoche",
+            "postcode": "75008",
+            "city": "Paris",
+            "lat": 48.875770,
+            "long": 2.299340,
+            "caregiver_id": 1
+        },
+        {
+            "street": "70 avenue d’Ivry",
+            "postcode": "75013",
+            "city": "Paris",
+            "lat": 48.824520,
+            "long": 2.363680,
+            "caregiver_id": 2
+        },
+        {
+            "street": "47 Rue Antoine Durafour",
+            "postcode": "42000",
+            "city": "Saint-Étienne",
+            "lat": 45.430620,
+            "long": 4.393440,
+            "caregiver_id": 3
+        }
+    ]
+}
