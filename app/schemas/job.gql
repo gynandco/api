@@ -1,0 +1,5 @@
+"Un type de vélo"
+type Job {
+    id: Int!
+    label: String!
+}

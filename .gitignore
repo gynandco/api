@@ -1,0 +1,22 @@
+# OS X
+**/.DS_Store*
+**/Icon?
+**/._*
+
+# npm
+node_modules
+*.gz
+
+#log
+logs/*
+!logs/.empty
+
+#vscode
+.vs_code/
+
+#config
+.env
+
+#log
+**/*.log
+**/*.log.*

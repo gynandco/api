@@ -1,0 +1,46 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Home-made API for Gyn&co.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "initDB": "psql postgres -U ceciliahaentjens -f ./data/init.sql; npm run resetDB;",
+    "resetDB": "psql -U gynandco_u -d gynandco -f ./data/structure.sql; DEBUG=seeding node data/seeding.js",
+    "dev": "DEBUG=*,-express*,-body-parser*,-nodemon* CACHE_ENABLED=true DATALOADER_ENABLED=true npx nodemon --ext 'js,gql'",
+    "format": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gynandco/api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gynandco/api/issues"
+  },
+  "homepage": "https://github.com/gynandco/api#readme",
+  "dependencies": {
+    "apollo-server": "^3.7.0",
+    "graphql": "^16.5.0",
+    "apollo-datasource-rest": "^3.5.2",
+    "bunyan": "^1.8.15",
+    "dataloader": "^2.1.0",
+    "datasource-sql": "^1.6.0",
+    "debug": "^4.3.3",
+    "dotenv": "^11.0.0",
+    "faker": "^5.5.3",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-scalars": "^1.17.0",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+      "eslint": "^8.5.0",
+      "eslint-config-airbnb-base": "^15.0.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-import": "^2.25.3",
+      "eslint-plugin-node": "^11.1.0",
+      "eslint-plugin-prettier": "^4.0.0"
+  }
+}
